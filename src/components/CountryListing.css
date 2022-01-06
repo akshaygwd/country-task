@@ -1,0 +1,66 @@
+.country-list ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.country-list ul li {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-direction: column;
+    flex: 0 0 23%
+}
+
+.country-list ul li img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.country-list ul li h2 {
+    font-size: 1rem
+}
+
+.container {
+    display: flex;
+}
+
+.leftside,
+.rightside {
+    flex: 0 0 50%;
+}
+
+.rightside {
+ text-align: left;
+}
+
+
+.rightside .error {
+    font-size: 14px;
+    color: red;
+}
+
+.rightside input,
+.rightside select {
+    display: block;
+    width: 90%;
+    padding: 5px;
+}
+
+.field-wrapper {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        padding-bottom: 20px;
+        display: block;
+    }
+    .rightside {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
